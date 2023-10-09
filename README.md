@@ -1,5 +1,13 @@
-# Welcome to GitHub Desktop!
+public class MileToKilometerConverter {
+    public static void main(String[] args) {
+        // Display the table header
+        System.out.println("Miles    Kilometers");
+        System.out.println("-------------------");
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
-
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+        // Convert and display miles to kilometers for 1 to 10 miles
+        for (int miles = 1; miles <= 10; miles++) {
+            double kilometers = miles * 1.609;
+            System.out.println(miles + "         " + kilometers);
+        }
+    }
+}
